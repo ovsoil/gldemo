@@ -7,10 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		758A57661A1E57B000097E60 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 758A57651A1E57B000097E60 /* main.cpp */; };
+		7528AE231A1EB4E600E63C2F /* libGLEW.1.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7528AE221A1EB4E600E63C2F /* libGLEW.1.11.0.dylib */; };
+		7528AE361A1EC55A00E63C2F /* Tunnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7528AE351A1EC55A00E63C2F /* Tunnel.cpp */; };
+		7528AE371A1EC5E900E63C2F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A578E1A1E5ADB00097E60 /* OpenGL.framework */; };
+		7528AE381A1EC5F100E63C2F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A57901A1E5AE400097E60 /* GLUT.framework */; };
+		7528AE391A1EC60100E63C2F /* libGLEW.1.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7528AE221A1EB4E600E63C2F /* libGLEW.1.11.0.dylib */; };
+		7572FD711A1EC84900883525 /* GLBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6A1A1EC84900883525 /* GLBatch.cpp */; };
+		7572FD721A1EC84900883525 /* GLShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6B1A1EC84900883525 /* GLShaderManager.cpp */; };
+		7572FD731A1EC84900883525 /* GLTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6C1A1EC84900883525 /* GLTools.cpp */; };
+		7572FD741A1EC84900883525 /* GLTriangleBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6D1A1EC84900883525 /* GLTriangleBatch.cpp */; };
+		7572FD751A1EC84900883525 /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6E1A1EC84900883525 /* math3d.cpp */; };
+		7572FD761A1EC8CC00883525 /* GLBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6A1A1EC84900883525 /* GLBatch.cpp */; };
+		7572FD771A1EC8CC00883525 /* GLShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6B1A1EC84900883525 /* GLShaderManager.cpp */; };
+		7572FD781A1EC8CC00883525 /* GLTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6C1A1EC84900883525 /* GLTools.cpp */; };
+		7572FD791A1EC8CC00883525 /* GLTriangleBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6D1A1EC84900883525 /* GLTriangleBatch.cpp */; };
+		7572FD7A1A1EC8CC00883525 /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD6E1A1EC84900883525 /* math3d.cpp */; };
+		7572FD7C1A1ECF6A00883525 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7572FD7B1A1ECF6A00883525 /* Triangle.cpp */; };
+		758A578F1A1E5ADB00097E60 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A578E1A1E5ADB00097E60 /* OpenGL.framework */; };
+		758A57911A1E5AE400097E60 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A57901A1E5AE400097E60 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7528AE261A1EC4E900E63C2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		758A57601A1E57B000097E60 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,25 +49,111 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7528AE221A1EB4E600E63C2F /* libGLEW.1.11.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.11.0.dylib; path = GLTools/lib/libGLEW.1.11.0.dylib; sourceTree = "<group>"; };
+		7528AE281A1EC4E900E63C2F /* Tunnel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tunnel; sourceTree = BUILT_PRODUCTS_DIR; };
+		7528AE351A1EC55A00E63C2F /* Tunnel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tunnel.cpp; sourceTree = "<group>"; };
+		7572FD5B1A1EC84900883525 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		7572FD5C1A1EC84900883525 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		7572FD5D1A1EC84900883525 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		7572FD5E1A1EC84900883525 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		7572FD5F1A1EC84900883525 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		7572FD601A1EC84900883525 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		7572FD611A1EC84900883525 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		7572FD621A1EC84900883525 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		7572FD631A1EC84900883525 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		7572FD641A1EC84900883525 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		7572FD651A1EC84900883525 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		7572FD6A1A1EC84900883525 /* GLBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLBatch.cpp; sourceTree = "<group>"; };
+		7572FD6B1A1EC84900883525 /* GLShaderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLShaderManager.cpp; sourceTree = "<group>"; };
+		7572FD6C1A1EC84900883525 /* GLTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLTools.cpp; sourceTree = "<group>"; };
+		7572FD6D1A1EC84900883525 /* GLTriangleBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLTriangleBatch.cpp; sourceTree = "<group>"; };
+		7572FD6E1A1EC84900883525 /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = math3d.cpp; sourceTree = "<group>"; };
+		7572FD7B1A1ECF6A00883525 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Triangle.cpp; path = Triangle/Triangle.cpp; sourceTree = SOURCE_ROOT; };
 		758A57621A1E57B000097E60 /* gldraw */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gldraw; sourceTree = BUILT_PRODUCTS_DIR; };
-		758A57651A1E57B000097E60 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		758A578E1A1E5ADB00097E60 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		758A57901A1E5AE400097E60 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7528AE251A1EC4E900E63C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7528AE391A1EC60100E63C2F /* libGLEW.1.11.0.dylib in Frameworks */,
+				7528AE381A1EC5F100E63C2F /* GLUT.framework in Frameworks */,
+				7528AE371A1EC5E900E63C2F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		758A575F1A1E57B000097E60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7528AE231A1EB4E600E63C2F /* libGLEW.1.11.0.dylib in Frameworks */,
+				758A57911A1E5AE400097E60 /* GLUT.framework in Frameworks */,
+				758A578F1A1E5ADB00097E60 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7528AE291A1EC4E900E63C2F /* Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				7528AE351A1EC55A00E63C2F /* Tunnel.cpp */,
+			);
+			path = Tunnel;
+			sourceTree = "<group>";
+		};
+		7572FD591A1EC84900883525 /* GLTools */ = {
+			isa = PBXGroup;
+			children = (
+				7572FD5A1A1EC84900883525 /* include */,
+				7572FD691A1EC84900883525 /* src */,
+			);
+			path = GLTools;
+			sourceTree = "<group>";
+		};
+		7572FD5A1A1EC84900883525 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7572FD5B1A1EC84900883525 /* GLBatch.h */,
+				7572FD5C1A1EC84900883525 /* GLBatchBase.h */,
+				7572FD5D1A1EC84900883525 /* GLFrame.h */,
+				7572FD5E1A1EC84900883525 /* GLFrustum.h */,
+				7572FD5F1A1EC84900883525 /* GLGeometryTransform.h */,
+				7572FD601A1EC84900883525 /* GLMatrixStack.h */,
+				7572FD611A1EC84900883525 /* GLShaderManager.h */,
+				7572FD621A1EC84900883525 /* GLTools.h */,
+				7572FD631A1EC84900883525 /* GLTriangleBatch.h */,
+				7572FD641A1EC84900883525 /* math3d.h */,
+				7572FD651A1EC84900883525 /* StopWatch.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7572FD691A1EC84900883525 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7572FD6A1A1EC84900883525 /* GLBatch.cpp */,
+				7572FD6B1A1EC84900883525 /* GLShaderManager.cpp */,
+				7572FD6C1A1EC84900883525 /* GLTools.cpp */,
+				7572FD6D1A1EC84900883525 /* GLTriangleBatch.cpp */,
+				7572FD6E1A1EC84900883525 /* math3d.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		758A57591A1E57B000097E60 = {
 			isa = PBXGroup;
 			children = (
-				758A57641A1E57B000097E60 /* gldraw */,
+				7572FD591A1EC84900883525 /* GLTools */,
+				7528AE221A1EB4E600E63C2F /* libGLEW.1.11.0.dylib */,
+				758A57901A1E5AE400097E60 /* GLUT.framework */,
+				758A578E1A1E5ADB00097E60 /* OpenGL.framework */,
+				758A57641A1E57B000097E60 /* Triangle */,
+				7528AE291A1EC4E900E63C2F /* Tunnel */,
 				758A57631A1E57B000097E60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,21 +162,40 @@
 			isa = PBXGroup;
 			children = (
 				758A57621A1E57B000097E60 /* gldraw */,
+				7528AE281A1EC4E900E63C2F /* Tunnel */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		758A57641A1E57B000097E60 /* gldraw */ = {
+		758A57641A1E57B000097E60 /* Triangle */ = {
 			isa = PBXGroup;
 			children = (
-				758A57651A1E57B000097E60 /* main.cpp */,
+				7572FD7B1A1ECF6A00883525 /* Triangle.cpp */,
 			);
+			name = Triangle;
 			path = gldraw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7528AE271A1EC4E900E63C2F /* Tunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7528AE2C1A1EC4E900E63C2F /* Build configuration list for PBXNativeTarget "Tunnel" */;
+			buildPhases = (
+				7528AE241A1EC4E900E63C2F /* Sources */,
+				7528AE251A1EC4E900E63C2F /* Frameworks */,
+				7528AE261A1EC4E900E63C2F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tunnel;
+			productName = Tunnel;
+			productReference = 7528AE281A1EC4E900E63C2F /* Tunnel */;
+			productType = "com.apple.product-type.tool";
+		};
 		758A57611A1E57B000097E60 /* gldraw */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 758A57691A1E57B000097E60 /* Build configuration list for PBXNativeTarget "gldraw" */;
@@ -91,6 +222,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "___XD___";
 				TargetAttributes = {
+					7528AE271A1EC4E900E63C2F = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					758A57611A1E57B000097E60 = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -109,22 +243,79 @@
 			projectRoot = "";
 			targets = (
 				758A57611A1E57B000097E60 /* gldraw */,
+				7528AE271A1EC4E900E63C2F /* Tunnel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7528AE241A1EC4E900E63C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7572FD761A1EC8CC00883525 /* GLBatch.cpp in Sources */,
+				7572FD771A1EC8CC00883525 /* GLShaderManager.cpp in Sources */,
+				7572FD781A1EC8CC00883525 /* GLTools.cpp in Sources */,
+				7572FD791A1EC8CC00883525 /* GLTriangleBatch.cpp in Sources */,
+				7572FD7A1A1EC8CC00883525 /* math3d.cpp in Sources */,
+				7528AE361A1EC55A00E63C2F /* Tunnel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		758A575E1A1E57B000097E60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758A57661A1E57B000097E60 /* main.cpp in Sources */,
+				7572FD731A1EC84900883525 /* GLTools.cpp in Sources */,
+				7572FD7C1A1ECF6A00883525 /* Triangle.cpp in Sources */,
+				7572FD741A1EC84900883525 /* GLTriangleBatch.cpp in Sources */,
+				7572FD721A1EC84900883525 /* GLShaderManager.cpp in Sources */,
+				7572FD751A1EC84900883525 /* math3d.cpp in Sources */,
+				7572FD711A1EC84900883525 /* GLBatch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		7528AE2D1A1EC4E900E63C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/GLTools/include",
+					"$(LOCAL_INCLUDE)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLTools/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7528AE2E1A1EC4E900E63C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/GLTools/include",
+					"$(LOCAL_INCLUDE)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLTools/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		758A57671A1E57B000097E60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -202,6 +393,16 @@
 		758A576A1A1E57B000097E60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(LOCAL_INCLUDE)",
+					"$(SRC_ROOT)/GLTools/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLTools/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +410,16 @@
 		758A576B1A1E57B000097E60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(LOCAL_INCLUDE)",
+					"$(SRC_ROOT)/GLTools/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLTools/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -216,6 +427,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7528AE2C1A1EC4E900E63C2F /* Build configuration list for PBXNativeTarget "Tunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7528AE2D1A1EC4E900E63C2F /* Debug */,
+				7528AE2E1A1EC4E900E63C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		758A575D1A1E57B000097E60 /* Build configuration list for PBXProject "gldraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -232,6 +452,7 @@
 				758A576B1A1E57B000097E60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
