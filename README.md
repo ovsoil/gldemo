@@ -1,4 +1,4 @@
-gldraw
+gldemo
 ======
 
-GLDraw with GLTools
+GL Demo with GLTools
